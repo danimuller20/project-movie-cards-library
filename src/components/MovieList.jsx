@@ -1,7 +1,10 @@
 import React from 'react'
+import MovieCard from './MovieCard'
 
 class MovieList extends React.Component {
-  render() {}
+  render() {
+    return <MovieCard />
+  }
 }
 
 export default MovieList;
