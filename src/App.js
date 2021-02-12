@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <main className="movie-list">
       <MovieList movies={ data } />
+      </main>
     </div>
   );
 }
