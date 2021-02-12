@@ -9,7 +9,7 @@ const MovieList = ({ movies }) => (
     ))}
   </div>);
 
-MovieList.propType = {
+MovieList.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -17,8 +17,8 @@ MovieList.propType = {
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
       rating: PropTypes.number,
-    }).isRequired
-  ),
+    }),
+  ).isRequired,
 };
 
 export default MovieList;
