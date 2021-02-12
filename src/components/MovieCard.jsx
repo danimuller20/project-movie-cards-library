@@ -7,7 +7,7 @@ class MovieCard extends Component {
     return (
       <div className="MovieCardContainer">
         <div className="MovieCardBody">
-          <img src={imagePath} alt={title} />
+          <img src={ imagePath } alt={ title } />
           <h4>{ title }</h4>
           <h5>{ subtitle }</h5>
           <p>{ storyline}</p>
@@ -18,7 +18,7 @@ class MovieCard extends Component {
         </div>
       </div>
     );
-  };
+  }
 }
 
 export default MovieCard;
