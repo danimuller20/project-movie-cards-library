@@ -3,8 +3,9 @@ import React from 'react';
 class MovieCard extends React.Component {
   
   render() {
-    return <p></p>;
+    const {title, subtitle, storyline, imagePath, rating} = this.props.movie;
+    return <p>{title}</p>;
   }
 }
 
-export default MovieCard;
+export default MovieCard
