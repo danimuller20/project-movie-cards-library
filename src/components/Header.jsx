@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <p>Cabecalho Opa!</p>
-    )
+      <header><h1>Movie Cards Library</h1></header>
+    );
   }
 }
 
