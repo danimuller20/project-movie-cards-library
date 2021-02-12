@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
+import PropTypes from 'prop-types';
 
+import './App.css';
 import movies from './data';
 
 import Header from './components/Header';
@@ -13,6 +14,10 @@ function App() {
       <MovieList movies={ movies } />
     </div>
   );
+}
+
+App.propTypes = {
+  movies: PropTypes.array,
 }
 
 export default App;
