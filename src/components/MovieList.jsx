@@ -8,7 +8,7 @@ class MovieList extends React.Component {
     return (
       movies.map((movie, index) => (<MovieCard
         movie={ movie }
-        key={ `Movie Title ${index + 1}` }
+        key="Movie Title {index + 1}"
       />))
     );
   }
