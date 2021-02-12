@@ -5,12 +5,12 @@ import MovieList from './MovieList';
 class App extends Component {
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Header />
-        <MovieList movies={movies} />
+        <MovieList movies={ movies } />
       </div>
     );
   }
 }
 
-export default App
+export default App;
