@@ -1,6 +1,7 @@
 import React from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types'
+import MovieCard from './MovieCard';
+
 
 const MovieList = ({ movies }) => (
   <div>
@@ -16,8 +17,8 @@ MovieList.propType = {
       subtitle: PropTypes.string,
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
-      rating: PropTypes.number
-    })
-  )
-}
+      rating: PropTypes.number,
+    }),
+  ),
+};
 export default MovieList;
