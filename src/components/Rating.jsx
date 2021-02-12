@@ -3,9 +3,8 @@ import React, { Component } from 'react'
 class Rating extends Component{
     render(){
         return(
-            <div>
-                <h4>Rating</h4>
-                <h5>{this.props.rating}</h5>
+            <div className='movie-card-rating'>
+                <h5 className='rating'>{this.props.rating}</h5>
             </div>
         );
     }
