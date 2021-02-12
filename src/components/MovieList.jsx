@@ -2,8 +2,12 @@
 import React from 'react';
 
 class MovieList extends React.Component {
-    render () {
-    }
+  render() {
+    return
+      <div>
+        ${movies}
+      </div>
+  }
 }
 
 export default MovieList;
