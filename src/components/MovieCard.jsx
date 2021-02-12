@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-
+import Rating from './Rating'
 class MovieCard extends Component{
     render(){
-        { title, subtitle, storyline, imagePath, rating } = this.props.movie;
+        const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
         return (
             <div>
             <div>
@@ -16,3 +16,5 @@ class MovieCard extends Component{
         );
     }
 }
+
+export default MovieCard
