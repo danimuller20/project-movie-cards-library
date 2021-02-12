@@ -3,13 +3,13 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 
-// const arrayExemplo = [1,2,3,4, 5];
+const arrayExemplo = [1, 2];
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies= {arrayExemplo}  />
+      <MovieList movies={ arrayExemplo } />
     </div>
   );
 }
