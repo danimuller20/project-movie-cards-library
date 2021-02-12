@@ -11,7 +11,7 @@ class MovieList extends Component {
     // })
 
     return(
-      <div>
+      <div className='movie-list'>
         {
           movies.map((movie, index) => {
             return(
