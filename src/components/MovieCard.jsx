@@ -28,13 +28,11 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  movie: {
-    title: 'Kingsglaive',
-    subtitle: 'Final Fantasy XV',
-    storyline: 'King Regis, who oversees the land of Lucis',
-    rating: 4.5,
-    imagePath: 'images/Kingsglaive_Final_Fantasy_XV.jpg',
-  },
+  title: 'Kingsglaive',
+  subtitle: 'Final Fantasy XV',
+  storyline: 'King Regis, who oversees the land of Lucis',
+  rating: 4.5,
+  imagePath: 'images/Kingsglaive_Final_Fantasy_XV.jpg',
 };
 
 export default MovieCard;
