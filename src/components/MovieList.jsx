@@ -12,7 +12,7 @@ class MovieList extends React.Component {
   }
 }
 
-movies.propTypes = {
+MovieList.propTypes = {
   movies: {},
 }
 
