@@ -14,8 +14,9 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propType = {
+MovieList.propTypes = {
   movies: PropTypes.array.isRequired,
+  cards: PropTypes.array,
 };
 
 export default MovieList;
