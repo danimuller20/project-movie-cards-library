@@ -23,8 +23,8 @@ class MovieCard extends Component {
   }
 }
 
-Rating.propTypes = {
-  rating: PropTypes.number,
-}
+MovieCard.propTypes = {
+  movie: PropTypes.object.isRequired,
+};
 
 export default MovieCard;

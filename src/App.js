@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import MovieList from './components/MovieList';
 import Header from './components/Header';
 import movies from './data';
@@ -14,8 +14,6 @@ function App() {
   );
 }
 
-MovieList.propType = {
-  movies: PropTypes.object.isRequired,
-}
+
 
 export default App;
