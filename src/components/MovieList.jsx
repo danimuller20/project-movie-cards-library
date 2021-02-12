@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
+  const { movies } = this.props;
+
   render() {
     return (
       <main>
-        { this.props.movies.map((movie) => <MovieCard movie={ movie }/>) }
+        { movies.map((movie) => <MovieCard movie={ movie }/>) }
       </main>
     );
   }
