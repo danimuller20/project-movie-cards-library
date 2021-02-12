@@ -21,10 +21,10 @@ class MovieCard extends Component {
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
-    subtitle: ProtoTypes.string,
-    storyline: ProtoTypes.string,
-    imagePath: ProtoTypes.string,
-    rating: ProtoTypes.number,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
   }).isRequired,
 };
 
