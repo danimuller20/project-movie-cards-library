@@ -1,5 +1,7 @@
 // implement MovieCard component here
 import React, { createElement, Component } from 'react';
+
+import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 // Ao final, tentar passar a key por essa classe
@@ -26,5 +28,19 @@ class MovieCard extends Component {
     );
   }
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }),
+};
+
+MovieCard.defaultProps = {
+  movie: {},
+};
 
 export default MovieCard;
