@@ -13,13 +13,15 @@ const MovieCard = ({ movie }) => (
 );
 
 MovieCard.propType = {
-  movie: {
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePath: PropTypes.string,
-    rating: PropTypes.number,
-  }
+  movie: PropTypes.object(
+    PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      imagePath: PropTypes.string,
+      rating: PropTypes.number,
+    })
+  ),
 };
 
 export default MovieCard;
