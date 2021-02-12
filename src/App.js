@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './App.css';
 import movies from './data';
@@ -14,10 +13,6 @@ function App() {
       <MovieList movies={ movies } />
     </div>
   );
-}
-
-App.propTypes = {
-  movies: PropTypes.array,
 }
 
 export default App;
