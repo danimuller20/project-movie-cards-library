@@ -3,7 +3,7 @@ class MovieList extends Component{
     render(){
         return(
             <main>
-                {this.props.movies.forEach((movie) => <MovieCard movie={movie} />)}
+                {this.props.movies.forEach((movie, index) => <MovieCard movie={movie} key={index} />)}
             </main>
         );
     }
