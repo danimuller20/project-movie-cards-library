@@ -22,7 +22,9 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  margin: 0 auto;
   padding: 48px 30px;
+  width: 80%;
 }
 
 .movie-card {
