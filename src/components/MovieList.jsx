@@ -5,9 +5,9 @@ import React from 'react';
 class MovieList extends React.Component {
   render() {
     const { title, subtitle, storyline, rating, imagePath } = this.props.movies;
-      return (
-      <section>
-        <img src={ imagePath } alt={ `${title} image` }></img>
+    return (
+    <section>
+        <img src={ imagePath }></img>
         <div>
           <p className="title">{title}</p>
           <p className="subtitle">{subtitle}</p>
@@ -16,7 +16,7 @@ class MovieList extends React.Component {
             <p>{rating}</p>
           </div>
         </div>
-      </section>
+    </section>
     );
   }
 }
