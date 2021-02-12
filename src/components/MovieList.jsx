@@ -2,7 +2,8 @@ import { Component } from 'react';
 
 class MovieList extends Component {
   render() {
-    return; 
+    const { movies } = this.props;
+    return movies;
   }
 };
 
