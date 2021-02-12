@@ -5,7 +5,9 @@ import Moviecard from './MovieCard';
 class MovieList extends Component {
   render() {
     return (
-      this.props.movies.map((movie) => <Moviecard movie={ movie } key={ movie.title } />)
+      <div className="movie-list">
+        {this.props.movies.map((movie) => <Moviecard movie={ movie } key={ movie.title } />)}
+      </div>
     );
   }
 }

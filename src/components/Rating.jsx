@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
-    return (<p className="rating">{this.props.rating}</p>);
+    return (
+      <div className="movie-card-rating rating">
+        <span className="rating">{this.props.rating}</span>);
+      </div>
+    );
   }
 }
- 
+
 Rating.prototypes = {
   rating: PropTypes.number,
 };
