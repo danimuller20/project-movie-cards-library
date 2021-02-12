@@ -3,15 +3,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-class MoveiList extends React.Component {
+class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />);
   }
 }
 
-MoveiList.propTypes = {
-  movies: PropTypes.arrayOf.isRequired,
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      subtitle: PropTypes.string,
+      storyline: PropTypes.string,
+      imagePath: PropTypes.string,
+      rating: PropTypes.number,
+    }),
+  ).isRequired,
 };
 
-export default MoveiList;
+export default MovieList;
