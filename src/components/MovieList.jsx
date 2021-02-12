@@ -10,7 +10,7 @@ class MovieList extends React.Component {
     ));
 
     return (
-      <div>
+      <div className="movie-list ">
         { moviesCard }
       </div>
     );
