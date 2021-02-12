@@ -6,12 +6,12 @@ import MovieCard from './MovieCard';
 class MoveiList extends React.Component {
   render() {
     const { movies } = this.props;
-    return movies.map((movie) => <MovieCard movie={ movie } key={ movie.title }/>);
+    return movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />);
   }
 }
 
 MoveiList.propTypes = {
-  movies: PropTypes.array,
+  movies: PropTypes.arrayOf.isRequired,
 };
 
 export default MoveiList;
