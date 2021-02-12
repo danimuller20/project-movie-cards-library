@@ -1,7 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 
-
 const MovieList = ({ movies }) => (
   <div>
     {movies.map((movie) => (
