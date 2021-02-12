@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    // const movies = this.props.movies
+    const movies = this.props.movies;
+
     return (
       <section className="movieListContainer">
-        {this.props.movies
-          .map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
       </section>
     );
   }
@@ -15,8 +16,8 @@ class MovieList extends Component {
 
 MovieList.propTypes = {
   movies: PropTypes
-  .arrayOf(PropTypes
-    .objectOf([PropTypes.string, PropTypes.number]))
+    .arrayOf(PropTypes
+      .objectOf([PropTypes.string, PropTypes.number]))
     .isRequired,
 };
 
