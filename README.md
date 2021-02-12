@@ -1,4 +1,4 @@
-### Termos e acordos
+### Termos e acordos ###
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
 Manual da Pessoa Estudante da Trybe.
@@ -98,7 +98,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
     * `npm install`
-    
+
     Atenção :atenção:: Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
 
   * Inicialize o projeto:
