@@ -2,9 +2,7 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-    return (
-     <p>placeholder</p>
-    );
+    return <p>placeholder</p>;
   }
 }
 
