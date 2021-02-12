@@ -1,10 +1,11 @@
 import { render } from 'enzyme';
 import React from 'react';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
 const { movie } = this.props;
-const { title, subtitle, storyline, imagePath, rating } = movie
+const { title, subtitle, storyline, imagePath, rating } = movie;
   return (
     <div>
       <h4>{ title }</h4>
@@ -13,6 +14,7 @@ const { title, subtitle, storyline, imagePath, rating } = movie
       <span>
         <img src={ imagePath } alt='cardImage'/>
       </span>
+      <Rating rating={ rating }/>
     </div>
   )
 
