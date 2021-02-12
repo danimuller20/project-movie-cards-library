@@ -13,7 +13,7 @@ const MovieCard = ({ movie }) => (
 );
 
 MovieCard.propType = {
-  movies: PropTypes.arrayOf(
+  movie: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
       subtitle: PropTypes.string,
