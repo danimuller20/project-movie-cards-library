@@ -1,11 +1,15 @@
 import React from 'react';
+import './components/Header';
+import './components/MovieList';
+import './components/MovieCard';
+import './components/Rating'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
+
+
     </div>
   );
 }
