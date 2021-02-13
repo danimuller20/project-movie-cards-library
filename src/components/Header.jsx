@@ -1,9 +1,9 @@
 // implement Header component here!
 import React from 'react';
 
-const  Header = () => (
+const Header = () => (
   <header>
-    <h1>Filmes</h1>
+    <h1>Movie Cards Library</h1>
   </header>
 );
 
