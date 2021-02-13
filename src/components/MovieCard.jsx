@@ -1,7 +1,5 @@
 // implement MovieCard component here
-import MovieList from '/components/MovieList';
 import React from 'react';
-import movies from './data';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
@@ -10,15 +8,13 @@ class MovieCard extends React.Component {
         return (
         <div>
           <div>
-            {this.props.movies.map(movie => movie = {movie})}
-          </div>
-          <div>
-          <img src={imagePath} alt={`${title} sprite`} />
+          <img src={imagePath} alt={`${title}`} />
           </div>
           <div>
               <h4>Title: {title} </h4>
               <h5>Subtitle: {subtitle} </h5>
-              <p>Sinpose: {sinopse} </p>
+              <p>Sinopse: {storyline} </p>
+              <Rating rating ={rating}/>
           </div>
         </div>
         )
