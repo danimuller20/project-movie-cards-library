@@ -3,10 +3,8 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-    return
-      <div>
-        ${movies}
-      </div>
+    const movies = this.props;
+    return {}
   }
 }
 
