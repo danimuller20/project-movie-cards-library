@@ -1,8 +1,13 @@
 // implement MovieList component here
-import React from 'react';
+import React, { Component } from 'react';
+import MovieCard from './MovieCard';
 
-const MovieList = () => (
-  <h1>Movie List teste</h1>
-);
+class MovieList extends Component {
+  render() {
+    return (
+      <MovieCard />
+    );
+  }
+}
 
 export default MovieList;
