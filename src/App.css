@@ -22,6 +22,7 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -32,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 450px;
-  margin: 5px;
+  margin: 20px;
   overflow: hidden;
   width: 300px;
 }
@@ -79,5 +80,5 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  padding: 0 20px;
 }
