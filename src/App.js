@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Header />
       <MovieList />
-      <MovieCard />
     </div>
   );
 }
