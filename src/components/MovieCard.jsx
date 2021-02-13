@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import Rating from './Rating';
 import PropTypes from 'prop-types';
+import Rating from './Rating';
 import '../App.css';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
     return (
       <div className="movie-card">
         <img src={ imagePath } alt="Filme card" className="movie-card-image"/>
