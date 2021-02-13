@@ -10,22 +10,25 @@ class MovieCard extends Component {
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
 
-    const image = createElement('img', { src: imagePath });
-    const movieTitle = createElement('h4', null, title);
-    const movieSubTitle = createElement('h5', null, subtitle);
-    const synopsis = createElement('p', null, storyline);
+    const image = createElement('img', { src: imagePath, className: 'movie-card-image' });
+    const movieTitle = createElement('h4', { className: 'movie-card-title' }, title);
+    const movieSubTitle = createElement('h5',
+      { className: 'movie-card-subtitle' }, subtitle);
+    const synopsis = createElement('p', { className: 'movie-card-storyline' }, storyline);
+    const cardBody = createElement('div',
+      { className: 'movie-card-body' }, movieTitle, movieSubTitle, synopsis);
+    const movieRating = createElement('div',
+      { className: 'movie-card-rating' }, <Rating rating={ rating } />);
 
-    return (
-      createElement('section', null, image, movieTitle, movieSubTitle, synopsis,
-        <Rating rating={ rating } />)
-      // <section>
-      //   {image}
-      //   {movieTitle}
-      //   {movieSubTitle}
-      //   {synopsis}
-      //   <Rating rating={ rating } />
-      // </section>
-    );
+    return createElement('section', { className: 'movie-card' },
+      image, cardBody, movieRating);
+    // <section>
+    //   {image}
+    //   {movieTitle}
+    //   {movieSubTitle}
+    //   {synopsis}
+    //   <Rating rating={ rating } />
+    // </section>
   }
 }
 

@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class Rating extends Component {
   render() {
     const { rating } = this.props;
-    return createElement('div', { className: 'rating' }, rating);
+    return createElement('span', { className: 'rating' }, rating);
   }
 }
 

@@ -3,8 +3,8 @@ import { createElement, Component } from 'react';
 
 class Header extends Component {
   render() {
-    return createElement('header', null,
-      createElement('h1', null, 'Movie Cards Library'));
+    return createElement('header', { className: 'movie-card-header' },
+      createElement('h1', { className: 'page-title' }, 'Movie Cards Library'));
   }
 }
 
