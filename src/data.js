@@ -28,8 +28,15 @@ const movies = [
     imagePath: 'images/Appleseed_Alpha.jpg',
   },
   {
-    title: 'Resident Evil',
+    title: 'Hunter x Hunter',
     subtitle: 'Vendetta',
+    storyline: 'Hunter x Hunter is set in a world where Hunters exist to perform all manner of dangerous tasks like capturing criminals and bravely searching for lost treasures in uncharted territories.',
+    rating: 4.2,
+    imagePath: 'images/hxh.jpg',
+  },
+  {
+    title: 'Resident Evil',
+    subtitle: 'HxH',
     storyline: 'Chris Redfield enlists the help of Leon S. Kennedy and Rebecca Chambers to stop a death merchant, with a vengeance, from spreading a deadly virus in New York.',
     rating: 4.2,
     imagePath: 'images/Resident_Evil_Vendetta.jpg',
