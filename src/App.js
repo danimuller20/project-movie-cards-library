@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Header from '/home/tiago/projetosTrybe/sd-09-project-movie-cards-library/src/components/Header.jsx';
+import Header from './components/Header';
 
 function App() {
   return (
