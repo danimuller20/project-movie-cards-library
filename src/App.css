@@ -32,7 +32,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 53vh;
+  min-width: 53vh;
   margin: 5px;
   overflow: hidden;
   width: 300px;
