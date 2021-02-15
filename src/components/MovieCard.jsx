@@ -7,14 +7,24 @@ class MovieCard extends React.Component {
     const { movie } = this.props;
     const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
-      <div className='movie-card '>
-        <img src={imagePath} alt='Imagem Do filme' className='movie-card-image'/>
-        <h4 className='movie-card-title'>{title}</h4>
-        <h5 className='movie-card-subtitle'>{subtitle}</h5>
-        <p className='movie-card-storyline'>{storyline}</p>
+      <div className="movie-card">
+        <img src={ imagePath } alt='Imagem Do filme' className="movie-card-image"/>
+        <h4 className="movie-card-title">{ title }</h4>
+        <h5 className="movie-card-subtitle">{ subtitle }</h5>
+        <p className="movie-card-storyline">{ storyline }</p>
         {<Rating rating={ rating } />}
       </div>
     );
   }
+}
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string
+  })
 }
 export default MovieCard;
