@@ -1,6 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
-import Rating from './Rating'
+import Rating from './Rating';
 
 const MovieCard = (prop) => (
   <div className="movie-card">
@@ -11,7 +11,7 @@ const MovieCard = (prop) => (
       <p className="movie-card-storyline">{ prop.movie.storyline }</p>
     </div>
     <div className="movie-card-rating">
-      <Rating rating={prop.movie.rating}/>
+      <Rating rating={ prop.movie.rating } />
     </div>
   </div>
 );
