@@ -12,10 +12,10 @@ class Rating extends React.Component {
   }
 }
 
-movies.propTypes = {
+Rating.propTypes = {
   movie: PropTypes.shape({
     rating: PropTypes.number,
   }).isRequired,
-}
+};
 
 export default Rating;
