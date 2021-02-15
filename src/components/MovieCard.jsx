@@ -2,12 +2,14 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
+    const { title, imagePath, subtitle, storyline } = this.props.Data;
+
     return (
       <div>
-        <img src={ this.props.Data.imagePath } alt="imagem do filme"/>
-        <h4>{ this.props.Data.title }</h4>
-        <h5>{ this.props.Data.subtitle }</h5>
-        <p>{ this.props.Data.storyline }</p>
+        <img src={ imagePath } alt="imagem do filme"/>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
       </div>
     );
   }
