@@ -16,7 +16,7 @@ class MovieCard extends React.Component {
   }
 }
 
-Greeting.propTypes = {
+MovieCard.propTypes = {
   title: PropTypes.string,
   imagePath: PropTypes.string,
   subtitle: PropTypes.string,
