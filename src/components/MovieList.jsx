@@ -4,8 +4,8 @@ import MovieCard from './MovieCard';
 
 const MovieList = (prop) => (
   <div className="movie-list">
-    { prop.movies.map((movie, index) =>
-      <MovieCard movie={ movie } key={ `Movie Title ${index + 1}` } />)}
+    { prop.movies.map((movie, index) => (
+      <MovieCard movie={ movie } key={ `Movie Title ${index + 1}` } />))}
   </div>
 );
 
