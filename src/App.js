@@ -2,14 +2,14 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-import Data from './data.js';
+import Data from './data';
 
 function App() {
   console.log(Data);
   return (
     <div className="App">
       <Header />
-      <MovieList/>
+      <MovieList />
     </div>
   );
 }
