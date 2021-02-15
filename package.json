@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^26.0.20",
     "acorn": ">=7.1.1",
     "minimist": ">=1.2.3",
     "react": "^16.11.0",
