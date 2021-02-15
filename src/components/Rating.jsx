@@ -13,7 +13,7 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  movie: PropTypes.shape({
+  rating: PropTypes.shape({
     rating: PropTypes.number,
   }).isRequired,
 };
