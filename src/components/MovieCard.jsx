@@ -3,7 +3,7 @@ import React from 'react';
 
 const MovieCard = (prop) => (
   <div className="movie-card">
-    <img src={ prop.movie.imagePath } className="movie-card-image" alt="movie-image"/>
+    <img src={ prop.movie.imagePath } className="movie-card-image" alt="movie-poster" />
     <div className="movie-card-body">
       <h2 className="movie-card-title">{ prop.movie.title }</h2>
       <h3 className="movie-card-subtitle">{ prop.movie.subtitle }</h3>
