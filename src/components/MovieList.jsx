@@ -9,9 +9,9 @@ export default class MovieList extends React.Component {
       (movie) => <MovieCard key={ movie.title } movie={ movie } />,
     );
     return (
-      <div>
+      <section>
         { moviesList }
-      </div>
+      </section>
     );
   }
 }

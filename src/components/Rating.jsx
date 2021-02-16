@@ -5,9 +5,10 @@ export default class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-      <div className="rating">
+      <section className="rating">
+        <header>Rating:</header>
         { rating }
-      </div>
+      </section>
     );
   }
 }

@@ -14,13 +14,20 @@ export default class MovieCard extends React.Component {
     } = movie;
 
     return (
-      <div>
-        <img src={ imagePath } alt={ title } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
+      <article>
+        <figure>
+          <img src={ imagePath } alt={ title } />
+        </figure>
+        <header>
+          <h4>{ title }</h4>
+          <h5>{ subtitle }</h5>
+        </header>
         <Rating rating={ rating } />
-      </div>
+        <details>
+          <summary>Plot</summary>
+          <p>{ storyline }</p>
+        </details>
+      </article>
     );
   }
 }
