@@ -3,7 +3,7 @@
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do
 Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto Movie Cards Library!
+# Boas vindas ao repositório do projeto Movie Cards Library
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
@@ -98,7 +98,7 @@ Desenvolva uma aplicação **React** que seja composta por um `conjunto de compo
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
     * `npm install`
-    
+
     Atenção :atenção:: Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
 
   * Inicialize o projeto:
