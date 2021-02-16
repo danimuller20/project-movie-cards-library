@@ -2,14 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
-
-const arrayExemplo = [1, 2];
+import movies from './data'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList movies={ arrayExemplo } />
+      <MovieList movies={ movies } />
     </div>
   );
 }
