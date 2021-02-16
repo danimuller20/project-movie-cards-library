@@ -19,12 +19,12 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCard.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string,
+MovieCard.defaultProps = {
+  title: "Enya",
+  subtitle: "Enya",
+  storyline: "Enya",
+  rating: 5,
+  imagePath: "images/Final_Fantasy_Spirits_Within.jpg",
 };
 
 export default MovieCard;
