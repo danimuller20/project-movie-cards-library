@@ -27,7 +27,7 @@ export default class MovieCard extends React.Component {
             </header>
             <Rating rating={ rating } />
           </section>
-          <section className="movie-card-storyline">{ storyline }</section>
+          <p className="movie-card-storyline">{ storyline }</p>
         </div>
       </article>
     );
