@@ -1,6 +1,6 @@
 // implement MovieCard component here
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
@@ -19,12 +19,12 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCard.defaultProps = {
-  title: "Enya",
-  subtitle: "Enya",
-  storyline: "Enya",
-  rating: 5,
-  imagePath: "images/Final_Fantasy_Spirits_Within.jpg",
-};
+// MovieCard.defaultProps = {
+//   title: "Enya",
+//   subtitle: "Enya",
+//   storyline: "Enya",
+//   rating: 5,
+//   imagePath: "images/Final_Fantasy_Spirits_Within.jpg",
+// };
 
 export default MovieCard;
