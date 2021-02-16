@@ -9,7 +9,7 @@ class MovieList extends Component {
       <div className="movie-list">
         {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
       </div>
-    )
+    );
   }
 }
 
