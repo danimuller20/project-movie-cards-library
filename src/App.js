@@ -3,13 +3,20 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <MovieList movies={ movies } />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.movies = [];
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <MovieList movies={ this.movies } />
+      </div>
+    );
+  }
 }
 
 export default App;
