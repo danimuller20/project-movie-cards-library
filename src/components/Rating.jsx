@@ -3,8 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
+
+  static defaultProps = {
+    rating: 0,
+  };
+
   render() {
-    return <p className="rating">{ this.props.rating }</p>;
+    const { rating } = this.props.rating;
+    return <p className="rating">{ rating }</p>;
   }
 }
 

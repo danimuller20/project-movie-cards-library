@@ -4,11 +4,22 @@ import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
+
+  static defaultProps = {
+    movie: {
+      title: 'No Title',
+      subtitle: 'No Subtitle',
+      storyline: 'No Storyline',
+      rating: 0,
+      imagePath: 'No Image',
+    }
+  };
+
   render() {
-    const movieInfo = this.props.movie;
+    const { movieInfo } = this.props.movie;
     return (
       <div>
-        <img src={ movieInfo.imagePath } />
+        <img src={ movieInfo.imagePath } alt={ movieInfo.title }/>
         <h4>{ movieInfo.title }</h4>
         <h5>{ movieInfo.subtitle }</h5>
         <p>{ movieInfo.storyline }</p>
