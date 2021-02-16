@@ -15,7 +15,7 @@ export default class MovieCard extends React.Component {
 
     return (
       <div>
-        <img src={ imagePath } />
+        <img src={ imagePath } alt={ title } />
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
@@ -26,16 +26,11 @@ export default class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
-  storyline: PropTypes.string,
-  rating: PropTypes.number,
-  imagePath: PropTypes.string,
-};
-
-MovieCard.defaultProps = {
-  subtitle: null,
-  storyline: null,
-  rating: null,
-  imagePath: null,
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  }).isRequired,
 };
