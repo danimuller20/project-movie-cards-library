@@ -19,7 +19,7 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCard.protoTypes = {
+MovieCard.propTypes = {
   key: PropTypes.string.isRequired,
   movie: PropTypes.shape({
     title: PropTypes.string,
