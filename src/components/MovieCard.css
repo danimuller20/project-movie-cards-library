@@ -1,0 +1,28 @@
+.MovieCardContainer {
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-between;
+  margin: 10px 3px;
+  text-align: center;
+  width : 450px;
+
+}
+
+img {
+  border-radius: 3px;
+  max-width: 450px;
+}
+
+.RatingContainer {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+}
+
+.rating {
+  width: 50px;
+}
