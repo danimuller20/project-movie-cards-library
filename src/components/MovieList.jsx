@@ -8,8 +8,8 @@ class MovieList extends Component {
 
     return (
       <main>
-        {movies.map(({ title }) => (
-          <MovieCard key={ title } />
+        {movies.map((movie) => (
+          <MovieCard key={ movie.title } movie={ movie } />
         ))}
       </main>
     );
