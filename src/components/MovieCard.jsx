@@ -9,7 +9,7 @@ export default class MovieCard extends React.Component {
       subtitle,
       storyline,
       rating,
-      imagePath ,
+      imagePath,
     } = movie;
 
     return (
@@ -18,7 +18,7 @@ export default class MovieCard extends React.Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <Rating movie={ movie } />
+        <Rating rating={ rating } />
       </div>
     );
   }
