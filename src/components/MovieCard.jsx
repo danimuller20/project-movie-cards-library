@@ -14,7 +14,7 @@ export default class MovieCard extends React.Component {
     } = movie;
 
     return (
-      <article>
+      <article className="movie-card">
         <figure>
           <img src={ imagePath } alt={ title } />
         </figure>
