@@ -8,12 +8,16 @@ class MovieCard extends Component {
     const { title, subtitle, storyline, rating, imagePath } = movie;
 
     return (
-      <section>
-        <img src={ imagePath } alt={ `Banner from ${title}` } />
-        <h4>{ title }</h4>
-        <h5>{ subtitle }</h5>
+      <section className="movie-card">
+        <img
+          src={ imagePath }
+          alt={ `Banner from ${title}` }
+          className="movie-card-image"
+        />
+        <h4 className="movie-card-title">{ title }</h4>
+        <h5 className="movie-card-subtitle">{ subtitle }</h5>
         <Rating rating={ rating } />
-        <p>{ storyline }</p>
+        <p className="movie-card-storyline">{ storyline }</p>
       </section>
     );
   }
