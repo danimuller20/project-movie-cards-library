@@ -2,7 +2,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
 import data from '../data';
-import PropTypes from 'prop-types';
 
 class MovieList extends React.Component {
   render() {
@@ -14,11 +13,6 @@ class MovieList extends React.Component {
       </div>
     );
   }
-}
-
-MovieList.propTypes = {
-    movie: PropTypes.string,
-    index: PropTypes.number,
 }
 
 export default MovieList;
