@@ -4,11 +4,6 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
-
-  static defaultProps = {
-    movies: [],
-  };
-
   render() {
     const { listMovies } = this.props.movies;
     const listElements = listMovies
@@ -20,6 +15,10 @@ class MovieList extends React.Component {
     );
   }
 }
+
+MovieList.defaultProps = {
+  movies: [],
+};
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.object),

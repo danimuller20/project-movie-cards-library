@@ -4,17 +4,6 @@ import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
-
-  static defaultProps = {
-    movie: {
-      title: 'No Title',
-      subtitle: 'No Subtitle',
-      storyline: 'No Storyline',
-      rating: 0,
-      imagePath: 'No Image',
-    }
-  };
-
   render() {
     const { movieInfo } = this.props.movie;
     return (
@@ -28,6 +17,16 @@ class MovieCard extends React.Component {
     );
   }
 }
+
+MovieCard.defaultProps = {
+  movie: {
+    title: 'No Title',
+    subtitle: 'No Subtitle',
+    storyline: 'No Storyline',
+    rating: 0,
+    imagePath: 'No Image',
+  }
+};
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
