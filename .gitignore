@@ -24,3 +24,9 @@ yarn-error.log*
 
 # VSCode repo settings
 .vscode
+
+# Readme
+README.md
+
+# Imagens do README
+.png
