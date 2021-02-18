@@ -1,19 +1,35 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+import movies from '../data';
+import { prototype } from 'enzyme-adapter-react-16';
 
 class MovieList extends React.Component {
   render() {
-    return(
+      const { title, subtitle, storyline, rating, imagePath } = this.props.movies;
+    return (
       <div>
         movies = [
-          {
-            this.props.movies.title,
-            this.props.movies.subtitle,
-            this.props.movies.storyline
-          },
+        {
+          title,
+          subtitle,
+          storyline,
+          rating,
+          imagePath
+        },
         ];
-      </div> 
-    )
+      </div>
+    );
   }
 }
 
-export default MovieList
+movies.PropTypes = {
+  movies: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string
+  })
+};
+
+export default MovieList;
