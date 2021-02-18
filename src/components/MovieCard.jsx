@@ -6,23 +6,23 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyLine, rating, imagePath } = this.props.movie;
     return (
       <div>
-        <p> 
-            { title } 
+        <p>
+          { title }
         </p>
-        <p> 
-            { subtitle } 
+        <p>
+          { subtitle }
         </p>
-        <p> 
-            { storyLine } 
+        <p>
+          { storyLine }
         </p>
-        <img src= { imagePath } />
+        <img src= { imagePath } alt = 'texto'/>
         <div>
-            <p> { rating } </p>
+          <p> { rating } </p>
         </div>
     </div>
-)
-    }
-};
+    );
+  }
+}
 
 export default MovieCard;
 
