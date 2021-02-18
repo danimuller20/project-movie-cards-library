@@ -2,9 +2,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const { title, subtitle, storyline, rating, imagePath } = this.props.movieInfo;
+
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props.movieInfo;
     return (
       <div>
         <section>
@@ -25,7 +26,7 @@ MovieCard.propTypes = {
   storyline: PropTypes.string,
   rating: PropTypes.number,
   imagePath: PropTypes.string,
- };
+};
 
 MovieCard.defaultProps = {
   title: 'teste',
