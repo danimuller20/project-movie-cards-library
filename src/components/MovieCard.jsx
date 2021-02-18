@@ -3,7 +3,7 @@ import React from 'react';
 
 class MovieCard extends React.Component {
     render() {
-        const {title, subtitle, storyLine, rating, imagePath} = this.props.cards
+        const { title, subtitle, storyLine, rating, imagePath } = this.props.movie
 return (
     <div>
         <p> { title } </p>
@@ -16,7 +16,6 @@ return (
     </div>
 )
     }
-
 };
 
 export default MovieCard;
