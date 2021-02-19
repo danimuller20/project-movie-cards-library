@@ -1,5 +1,5 @@
 import React from 'react';
-import Proptypes from 'prop-types'
+import Proptypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class Rating extends React.Component {
 }
 
 Rating.proptype = {
-  rating: Proptypes.number,
+  rating: Proptypes.number.isRequired,
 };
 
 export default Rating;
