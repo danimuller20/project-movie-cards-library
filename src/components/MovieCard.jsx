@@ -1,14 +1,19 @@
 // implement MovieCard component here
+
 import React from 'react';
-const MovieCard = ({movie}) => {
-  return (
-    <div>
-      <img src={movie.imagePath} alt="filme"/>
-      <h4>{movie.title}</h4>
-      <h5>{movie.subtitle}</h5>
-      <p>{movie.storyline}</p>
-    </div>
-  );
+
+class MovieCard extends React.Component {
+  render() {
+    const { title, subtitle, storyline, imagePath } = this.props.movie;
+    return (
+      <div>
+        <img src={ imagePath } alt="filme" />
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
+        <p>{ storyline }</p>
+      </div>
+    );
+  }
 }
 
 export default MovieCard;
