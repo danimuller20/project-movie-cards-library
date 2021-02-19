@@ -1,14 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
-import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
 import data from './data';
-import './App.css';
 
 function App() {
   return (
     <div>
       <Header />
-      <MovieCard movie={ data[0] } />
+      <MovieList movies={ data } />
     </div>
   );
 }

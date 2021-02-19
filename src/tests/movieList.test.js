@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
-import MovieCard from '../MovieCard';
+import MovieCard from '../components/MovieCard';
 import MovieList from '../components/MovieList';
 
 const rating = 4.5;
