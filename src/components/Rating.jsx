@@ -5,7 +5,7 @@ class Rating extends React.Component {
   render() {
     return (
       <div>
-       {movies.rating}
+        {movies.rating}
       </div>
     );
   }
