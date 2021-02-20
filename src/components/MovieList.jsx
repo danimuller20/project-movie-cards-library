@@ -3,11 +3,11 @@ import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
+    const movies = this.props;
     return (
-      <div className="movieList-container">
-        <MovieList>
-          <movieCard/>
-        </MovieList>
+      <div>
+        <p>Aqui Movie List</p>
+        <MovieCard />
       </div>
     );
   }
