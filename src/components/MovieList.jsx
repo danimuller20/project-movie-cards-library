@@ -3,13 +3,12 @@ import React from 'react';
 class MovieList extends React.Component {
   render() {
     return (
-    <h1>Teste</h1>
+      <div>
+        <header>
+          <h1>testando</h1>
+        </header>
+      </div>
     );
-  };
-};
-
-
-
-
-
+  }
+}
 export default MovieList;
