@@ -14,15 +14,16 @@ body {
 
 .page-title {
   color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 600;
   text-align: center;
 }
 
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
+  justify-content: space-between;
+  padding: 40px 40px;
 }
 
 .movie-card {
@@ -31,12 +32,17 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
-  margin: 5px;
+  height: 430px;
+  margin: 10px;
   overflow: hidden;
   width: 300px;
 }
 
+.movie-card:hover {
+  border: 1px solid rgb(0, 0, 0);
+  height: 450px;
+  width: 320px;
+}
 
 .movie-card-image {
   width: 100%;
