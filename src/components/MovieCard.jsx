@@ -10,6 +10,9 @@ class MovieCard extends React.Component {
       <div>
         <p> Movie Card</p>
         <img src={ imagePath } alt="Imagem do filme" />
+        <h4>
+          { title }
+        </h4>
         <Rating />
       </div>
     );
@@ -18,6 +21,7 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   imagePath: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
 };
 
 export default MovieCard;
