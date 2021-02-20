@@ -1,3 +1,4 @@
+import { prototype } from 'enzyme-adapter-react-16';
 import React from 'react';
 
 class Header extends React.Component {
@@ -9,5 +10,7 @@ class Header extends React.Component {
     );
   }
 }
+
+
 
 export default Header;
