@@ -9,7 +9,7 @@ class MovieCard extends Component {
       <div>
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
-        <img src={ imagePath } alt="Movie image"/>
+        <img src={ imagePath } alt={ title } />
         <p>{ storyline }</p>
         <Rating rating={ rating } />
       </div>
@@ -28,14 +28,13 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  movie: "Filme não definido",
   movie: ({
-    title: "Sem título definido",
-    subtitle: "Subtítulo não definido",
-    imagePath: "Caminho da imagem não definido",
-    storyline: "Sinopse não definida",
+    title: 'Sem título definido',
+    subtitle: 'Subtítulo não definido',
+    imagePath: 'Caminho da imagem não definido',
+    storyline: 'Sinopse não definida',
     rating: PropTypes.number,
-  })
-}
+  }),
+};
 
 export default MovieCard;

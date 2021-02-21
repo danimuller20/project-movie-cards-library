@@ -15,7 +15,7 @@ Rating.propTypes = {
 };
 
 Rating.defaultProps = {
-  rating: "O filme não possue avaliação",
+  rating: 'O filme não possue avaliação',
 };
 
 export default Rating;
