@@ -15,7 +15,7 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movie: PropTypes.shape({
+  movies: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     imagePath: PropTypes.string,
