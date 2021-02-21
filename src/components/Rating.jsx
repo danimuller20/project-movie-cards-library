@@ -12,6 +12,10 @@ class Rating extends Component {
 
 Rating.propTypes = {
   rating: PropTypes.number,
-}
+};
+
+Rating.defaultProps = {
+  rating: "O filme não possue avaliação",
+};
 
 export default Rating;
