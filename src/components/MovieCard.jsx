@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import '../App.css';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, imagePath, storyline, rating } = this.props.movie;
+    const { movie } = this.props;
+    const { title, subtitle, imagePath, storyline, rating } = movie;
     return (
       <div>
         <h4>{ title }</h4>
@@ -28,13 +30,12 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  movie: ({
-    title: 'Sem título definido',
-    subtitle: 'Subtítulo não definido',
-    imagePath: 'Caminho da imagem não definido',
-    storyline: 'Sinopse não definida',
-    rating: PropTypes.number,
-  }),
+  movie: 'Filme não definido',
+  title: 'Sem título definido',
+  subtitle: 'Subtítulo não definido',
+  imagePath: 'Caminho da imagem não definido',
+  storyline: 'Sinopse não definida',
+  rating: PropTypes.number,
 };
 
 export default MovieCard;
