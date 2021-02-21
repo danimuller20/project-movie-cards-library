@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
+import Rating from './Rating';
+import PropTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
@@ -11,15 +13,19 @@ class MovieList extends Component {
         <MovieCard movie={ movie[2] } key="3" />
         <MovieCard movie={ movie[3] } key="4" />
         <MovieCard movie={ movie[4] } key="5" />
-
-      {/* <MovieList movie={ movies[0] } key="1" />
-      <MovieList movie={ movies[1] } key="2" />
-      <MovieList movie={ movies[2] } key="3" />
-      <MovieList movie={ movies[3] } key="4" />
-      <MovieList movie={ movies[4] } key="5" /> */}
       </div>
     );
   }
+}
+
+MovieList.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    imagePath: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  })
 }
 
 export default MovieList;
