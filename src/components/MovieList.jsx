@@ -7,7 +7,7 @@ class MovieList extends React.Component {
       <section>
         <h1>Movie List </h1>
       </section>
-    )
+    );
   }
 }
 
