@@ -13,7 +13,7 @@ class MovieCard extends React.Component {
         <img src={ movie.imagePath } alt="Movie folder" />
         <Rating rating={ movie.rating } />
       </div>
-    )
+    );
   }
 }
 MovieCard.propTypes = {
