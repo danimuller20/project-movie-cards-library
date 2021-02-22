@@ -6,9 +6,9 @@ class MovieList extends React.Component {
     return (
       <section>
         <h1>Movie List </h1>
-      </section>        
-    ) 
-    }
+      </section>
+    )
+  }
 }
 
 export default MovieList;
