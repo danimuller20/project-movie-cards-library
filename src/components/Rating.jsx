@@ -6,19 +6,18 @@ class Rating extends React.Component {
   render() {
     const { rating } = this.props;
     return (
-        <span>
-            { rating }
-        </span>
-    )
+      <span>
+        { rating }
+      </span>
+    );
   }
 }
 
 Rating.propTypes = {
-    rating: PropTypes.number,
-  };
-  
-  Rating.defaultProps = {
-    rating: null,
-  };
+  rating: PropTypes.number,
+};
+Rating.defaultProps = {
+  rating: null,
+};
 
 export default Rating;
