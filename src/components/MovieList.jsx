@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    const moviesArray = this.props;
-    return moviesArray;
+    const { movies } = this.props;
+    movies.forEach((movie) => <MovieCard movie={ movie } />);
+    return movieListElements;
   }
 }
 MovieList.propTypes = {
-  movies: PropTypes.shape({
+  movies: PropTypes.arrayOf({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
