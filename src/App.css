@@ -40,8 +40,8 @@ body {
   flex-direction: column;
   height: 450px;
   margin: 5px;
-  overflow: hidden;
   min-width: 300px;
+  overflow: hidden;
   width: 32%;
 }
 
