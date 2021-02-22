@@ -31,9 +31,7 @@ const movies = [
 function App() {
   return (
     <div className="App">
-      <ul>
-        <MovieList movies={ movies } />
-      </ul>
+      {}
     </div>
   );
 }
