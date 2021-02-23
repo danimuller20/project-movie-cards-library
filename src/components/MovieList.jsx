@@ -8,7 +8,7 @@ export default class MovieList extends React.Component {
   render() {
     return (
       <div>
-        {data.map((movie, index) => <MovieCard movieInfo={ movie } key={ index } />)}
+        {data.map((movie) => <MovieCard movieInfo={ movie } key={ movie.title } />)}
       </div>
     );
   }
