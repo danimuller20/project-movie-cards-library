@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 
 export default class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props.movieInfo;
+    const { movieInfo } = this.props;
+    const { title, subtitle, storyline, rating, imagePath } = movieInfo;
     return (
       <section>
         <img src={ imagePath } className="movie-card-image" alt="broken" />
