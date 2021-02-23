@@ -1,5 +1,6 @@
 // implement Rating component here
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
@@ -8,6 +9,10 @@ class Rating extends Component {
         <div className='rating'>{rating}</div>
       );
   }
+}
+
+Rating.protoType = {
+  rating: PropTypes.number,
 }
 
 
