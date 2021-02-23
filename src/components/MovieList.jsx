@@ -10,7 +10,7 @@ class MovieList extends React.Component {
   render() {
     return (
       <span>
-        {this.cardRender(this.props.movies)}
+        {this.cardRender(this.props)}
       </span>
     );
   }
