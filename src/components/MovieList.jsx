@@ -11,12 +11,6 @@ class MovieList extends React.Component {
   }
 }
 MovieList.propTypes = {
-  movies: PropTypes.arrayOf({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
-  }).isRequired,
+  movies: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 export default MovieList;
