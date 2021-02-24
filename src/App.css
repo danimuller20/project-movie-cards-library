@@ -43,7 +43,6 @@ body {
   width: 300px;
 }
 
-
 .movie-card-image {
   width: 100%;
 }
@@ -81,10 +80,10 @@ body {
 }
 
 .movie-card-rating {
-  background-color:black;
+  background-color: black;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding: 12px 20px;
 }
 
