@@ -1,5 +1,6 @@
 // implement Rating component here
 import React from 'react';
+import propTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
@@ -11,6 +12,10 @@ class Rating extends React.Component {
       </div>
     );
   }
+}
+
+Rating.prototypes = {
+  rating: propTypes.number
 }
 
 export default Rating;
