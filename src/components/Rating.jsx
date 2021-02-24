@@ -14,7 +14,7 @@ class Rating extends React.Component {
   }
 }
 
-Rating.prototypes = {
+Rating.propTypes = {
   rating: propTypes.number,
 };
 
