@@ -8,10 +8,10 @@ import Rating from './components/Rating.jsx';
 function App() {
   return (
     <div className="App">
-      { Header }
-      { MovieCard }
-      { MovieList }
-      { Rating }
+      <Header />
+      <MovieCard />
+      <MovieList />
+      <Rating />
 
     </div>
   );
