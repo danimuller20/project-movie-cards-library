@@ -3,11 +3,8 @@
 
 // class Rating extends Component {
 //   render() {
-//     return(
-//       <div>
-//         <p>Hello</p>
-//       </div>
-//     )
+//     const { rating } = this.props.Rate;
+
 //   }
 // }
 
