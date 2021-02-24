@@ -19,6 +19,10 @@ MovieList.propTypes = {
   movies: propTypes.arrayOf(
     propTypes.object
   )
-}
+};
+
+MovieList.defaultProps = {
+  movies: 'error'
+};
 
 export default MovieList;

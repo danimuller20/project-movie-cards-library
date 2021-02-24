@@ -28,6 +28,10 @@ MovieCard.propTypes ={
     imagePath: propTypes.string,
     rating: propTypes.number
   })
-}
+};
+
+MovieCard.defaultProps = {
+  movie: 'error'
+};
 
 export default MovieCard;
