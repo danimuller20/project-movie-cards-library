@@ -4,6 +4,12 @@ body {
   font-size: 16px;
 }
 
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -75,9 +81,13 @@ body {
 }
 
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color:black;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
-  justify-content: flex-end;
+  justify-content:space-between;
   padding: 12px 20px;
+}
+
+.movie-card-rating-text {
+  color: #6c757d;
 }
