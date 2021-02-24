@@ -21,15 +21,16 @@ MovieList.propTypes = {
       subtitle: PropTypes.string,
       storyline: PropTypes.string,
       imagePath: PropTypes.string,
-    })),
+    })
+  ),
 };
 
 MovieList.defaultProps = {
   movies: ({
-  title: 'Movie Title 1',
-  subtitle: 'Movie Subtitle 1',
-  storyline: 'Movie Storyline 1',
-  imagePath: 'images/movie_1',
+    title: 'Movie Title 1',
+    subtitle: 'Movie Subtitle 1',
+    storyline: 'Movie Storyline 1',
+    imagePath: 'images/movie_1',
   }),
 };
 
