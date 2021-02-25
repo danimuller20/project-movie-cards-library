@@ -4,7 +4,7 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <div>xablau</div>
+      <header>{this.props.text}</header>
     )
   }
 }
