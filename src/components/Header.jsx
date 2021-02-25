@@ -4,7 +4,11 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <header>{this.props.text}</header>
+      <header>
+        <h1>
+          {this.props.text}
+        </h1>
+      </header>
     )
   }
 }
