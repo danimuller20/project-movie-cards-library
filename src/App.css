@@ -1,6 +1,7 @@
 body {
   background-color: whitesmoke;
-  background-image: url(https://cdn.wallpapersafari.com/39/38/lYC3Gx.jpg);
+  background-image: url("https://images.wallpapersden.com/image/download/among-us_bGhpaW2UmZqaraWkpJRnZWltrWZmamc.jpg");
+  background-size: cover;
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -38,8 +39,8 @@ body {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 450px;
+  justify-content: space-between;
   margin: 5px;
   overflow: hidden;
   width: 300px;
