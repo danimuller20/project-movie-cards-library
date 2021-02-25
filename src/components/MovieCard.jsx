@@ -2,11 +2,10 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating} = this.props.movie;
-    return(
+    return (
       <div> </div>
-    )
+    );
   }
 }
 
-export MovieCard;
+export default MovieCard;
