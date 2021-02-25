@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 class MovieCard extends React.Component {
-    render() {
-        const { movie } = this.props;
-        return (
+  render() {
+    const { movie } = this.props;
+      return (
             <div>
                 <h4>{ movie.title }</h4>
                 <h5>{ movie.subtitle }</h5>
@@ -15,7 +16,7 @@ class MovieCard extends React.Component {
   }
 }
 MovieCard.propTypes = {
-    movie: PropTypes.exact({
+  movie: PropTypes.exact({
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyLine: PropTypes.string,
