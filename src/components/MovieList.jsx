@@ -2,16 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-class MovieList extends React.Component {
+class MovieList extends Component {
   render() {
     const { movies } = this.props;
+
     return (
-      <div>
-        {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
+      <div className="movie-list">
+        {movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />
+        ))}
       </div>
     );
   }
 }
+
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
@@ -25,13 +28,17 @@ MovieList.propTypes = {
 MovieList.defaultProps = {
   movies: [
     {
-      title: 'Movie Title',
-      subtitle: 'Movie Title',
-      storyline: 'Movie Storyline',
-      rating: 'Movie rating',
-      imagePath: 'File path to Movie banner',
+      title: 'Titulo',
+      subtitle: 'Subtitulo',
+      storyline: 'Sinopse',
+      rating: 'Nota',
+      imagePath: 'Imagem',
     },
   ],
 };
+
+// Para os requisitos onde se era exigido proptype e propdefault,
+// consultei o repositório da colega Raquel Picanço para me ajudar
+// a visualizar o resultado e abstração
 
 export default MovieList;
