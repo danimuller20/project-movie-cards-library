@@ -11,7 +11,7 @@ class MovierCard extends React.Component {
         <p>{ subtitles }</p>
         <p>{ storyline }</p>
         <div>
-          <img src={ imagePath } alt={`Photo of ${title}`} />
+          <img src={ imagePath } alt={ title } />
         </div>
         <p>{ rating }</p>
       </div>
@@ -19,7 +19,7 @@ class MovierCard extends React.Component {
   }
 }
 
-MovierCard.propsTypes = {
+MovierCard.propTypes = {
   movie: PropTypes.objectOf(PropTypes.shape({
     title: PropTypes.string,
     subtitles: PropTypes.string,
