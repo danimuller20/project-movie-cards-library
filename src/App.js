@@ -7,8 +7,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList />
+      <MovieList movies />
     </div>
   );
 }
+
 export default App;
