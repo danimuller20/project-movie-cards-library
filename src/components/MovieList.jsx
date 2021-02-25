@@ -18,6 +18,7 @@ MovieList.propTypes = {
     title: propTypes.string,
     subtitle: propTypes.string,
     storyline: propTypes.string,
+    imagePath: propTypes.string,
   })),
 };
 
@@ -27,10 +28,12 @@ MovieList.defaultProps = {
       title: 'TitleMovie',
       subtitle: 'TitleMovie',
       storyline: 'MovieStoryLine',
+      imagePath: 'images/movie',
     },
   ],
 };
-export default MovieList;
 
 // Para os requisitos onde foi necessário o proptype e o defaultProps, consultei o repositório da colega
 // Raquel Picanço e consultei a estrutura utilizada.
+
+export default MovieList;
