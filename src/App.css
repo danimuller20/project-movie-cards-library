@@ -1,7 +1,13 @@
 body {
   background-color: whitesmoke;
+  background-image: url(https://cdn.wallpapersafari.com/39/38/lYC3Gx.jpg);
   box-sizing: border-box;
   font-size: 16px;
+}
+
+.card-titles {
+  display: flex;
+  flex-direction: column;
 }
 
 .movie-card-header {
@@ -22,21 +28,22 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 450px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
@@ -48,12 +55,14 @@ body {
 }
 
 .movie-card-title {
+  align-self: center;
   font-size: 24px;
   font-weight: 500;
   margin: 0 0 12px;
 }
 
 .movie-card-subtitle {
+  align-self: center;
   color: #6c757d;
   font-size: 16px;
   font-weight: 500;
@@ -62,7 +71,8 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
-  text-align: justify;
+  margin: 0 3px 10px;
+  text-align: center;
 }
 
 .rating {
