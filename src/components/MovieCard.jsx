@@ -11,7 +11,7 @@ class MovierCard extends React.Component {
           <img src={ imagePath } alt={ title } />
         </div>
         <h4>{ title }</h4>
-        <p>{ subtitle }</p>
+        <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
         <p>{ rating }</p>
       </div>
