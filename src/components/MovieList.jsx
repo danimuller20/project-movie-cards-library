@@ -1,39 +1,43 @@
-import React, { Component } from 'react';
-import propTypes from 'prop-types';
+import React from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
-class MovieList extends Component {
+class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
+
     return (
-      <div className="movie-list">
-        {movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />)}
-      </div>
+      <main className="movie-list">
+        {movies.map((movie) => (<MovieCard key={ movie.title } movie={ movie } />
+        ))}
+      </main>
     );
   }
 }
 
 MovieList.propTypes = {
-  movies: propTypes.arrayOf(PropTypes.shape({
-    title: propTypes.string,
-    subtitle: propTypes.string,
-    storyline: propTypes.string,
-    imagePath: propTypes.string,
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
   })),
 };
 
 MovieList.defaultProps = {
   movies: [
     {
-      title: 'TitleMovie',
-      subtitle: 'TitleMovie',
-      storyline: 'MovieStoryLine',
-      imagePath: 'images/movie',
+      title: 'Movie Title',
+      subtitle: 'Movie Title',
+      storyline: 'Movie Storyline',
+      rating: 'Movie rating',
+      imagePath: 'File path to Movie banner',
     },
   ],
 };
 
-// Para os requisitos onde foi necessário o proptype e o defaultProps, consultei o repositório da colega
-// Raquel Picanço e consultei a estrutura utilizada.
+// Para os requisitos usando prop-types e defaultProps, consultei o repositório da colega Raquel Picanço
+// Para me guiar a respeito da sintaxe e o onde, quando usar o prop-type.
 
 export default MovieList;
