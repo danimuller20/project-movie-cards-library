@@ -1,2 +1,9 @@
-// implement Header component here
-// Starts the project
+import { component } from 'react';
+
+class Header extends component {
+  render() {
+
+  }
+}
+
+export default Header;
