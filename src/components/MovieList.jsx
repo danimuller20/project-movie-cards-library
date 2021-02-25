@@ -32,5 +32,5 @@ MovieList.defaultProps = {
 };
 export default MovieList;
 
-// Para os requisitos onde foi necessário o proptype e o defaultProps, consultei o repositório da colega 
+// Para os requisitos onde foi necessário o proptype e o defaultProps, consultei o repositório da colega
 // Raquel Picanço e consultei a estrutura utilizada.
