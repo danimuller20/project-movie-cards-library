@@ -1,6 +1,7 @@
 body {
+  background-attachment: fixed;
   background-color: whitesmoke;
-  background-image: url("https://images.wallpapersden.com/image/download/among-us_bGhpaW2UmZqaraWkpJRnZWltrWZmamc.jpg");
+  background-image: url('https://images.wallpapersden.com/image/download/among-us_bGhpaW2UmZqaraWkpJRnZWltrWZmamc.jpg');
   background-size: cover;
   box-sizing: border-box;
   font-size: 16px;
