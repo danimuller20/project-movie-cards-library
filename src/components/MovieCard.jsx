@@ -13,7 +13,6 @@ class MovierCard extends React.Component {
         <h4>{ title }</h4>
         <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <p>{ rating }</p>
       </div>
     );
   }
