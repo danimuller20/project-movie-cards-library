@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
-import { movies } from '../data';
+// import { movies } from '../data';
 
 class MovieList extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class MovieList extends React.Component {
 
     return (
       <section>
-        { movies.map((movie, index) => <MovieCard movie={movie} key={movie.title} />) }
+        { movies.map((movie) => <MovieCard movie={ movie } key={ movie.title } />) }
       </section>
     );
   }

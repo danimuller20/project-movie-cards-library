@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data';
+// import data from '../data';
 
 class MovieCard extends React.Component {
   render() {
@@ -7,13 +7,13 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
       <section>
-        <h2>{ title }</h2>
-        <h3>{ subtitle }</h3>
+        <h4>{ title }</h4>
+        <h5>{ subtitle }</h5>
         <p>{ storyline }</p>
-        <p>{ rating }</p>
-        <img src={ imagePath } alt="Movie Image" />
+        <span>{ rating }</span>
+        <img src={ imagePath } alt={ title } />
       </section>
-    )
+    );
   }
 }
 
