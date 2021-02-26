@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 import movies from './data';
 
 function App() {
+  document.title = 'Movie Cards Library';
   return (
     <div className="App">
       <Header />
