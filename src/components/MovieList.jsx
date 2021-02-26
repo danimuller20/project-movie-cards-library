@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 const MovieList = ({ movies }) => (
   <header>
     <h1>Movie Cards Library</h1>
-    {movies.map((movie) => <MovieCard key={ movie } movie={ movie } />)}
+    {movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)}
   </header>
 );
 
