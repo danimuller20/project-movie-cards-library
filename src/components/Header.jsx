@@ -9,7 +9,7 @@ class Header extends React.Component {
       <header>
         <h1>Movie Cards Library</h1>
       </header>
-    )
+    );
   }
 }
 
