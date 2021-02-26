@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
@@ -10,7 +9,7 @@ const MovieCard = ({ movie }) => (
     <h4>{ movie.title }</h4>
     <h5>{ movie.subtitle }</h5>
     <p>{ movie.storyline }</p>
-    <Rating rating={movie.rating} />
+    <Rating rating={ movie.rating } />
   </div>
 );
 
@@ -25,4 +24,3 @@ MovieCard.propTypes = {
 };
 
 export default MovieCard;
-
