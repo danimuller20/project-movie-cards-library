@@ -2,7 +2,11 @@ import React from 'react';
 
 class MovieList extends React.Component {
   render() {
-    return <h1>movie list</h1>;
+    return (
+      <div>
+        <h1>teste</h1>
+      </div>
+    );
   }
 }
 
