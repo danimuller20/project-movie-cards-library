@@ -1,8 +1,8 @@
 import React from 'react';
 
-class MovieCard extends Component {
+class MovieCard extends React.Component {
   render() {
-    return <h1>movie card</h1>;
+    return <h1>asdf</h1>;
   }
 }
 
