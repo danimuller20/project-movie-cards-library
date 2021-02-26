@@ -3,9 +3,11 @@ import React from 'react';
 
 class Header extends React.Component {
     render() {
-        return <header>
+        return ( 
+        <header>
             <h1>Cabeçalho do projeto</h1>
         </header>
+        )
     }
 }
 
