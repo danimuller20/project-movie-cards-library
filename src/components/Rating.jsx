@@ -1,11 +1,17 @@
 import React from 'react';
+import '../App.css';
 import PropTypes from 'prop-types';
 
-const Rating = ({ rating }) => (
-  <div>
-    <h1 className="rating">{rating}</h1>
-  </div>
-);
+class Rating extends React.Component {
+  render() {
+    const { rating } = this.props;
+    return (
+      <div className="rating">
+        <p>{ rating }</p>
+      </div>
+    );
+  }
+}
 
 Rating.propTypes = {
   rating: PropTypes.number.isRequired,
