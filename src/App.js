@@ -6,10 +6,10 @@ import Rating from './components/Rating';
 
 class App extends React.Component {
   render() {
+    <MovieList />;
     return (
       <div className="App">
         <Header />
-        <MovieList />
         <Rating />
       </div>
     );
