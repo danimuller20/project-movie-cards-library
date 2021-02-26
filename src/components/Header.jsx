@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Header extends React.Component {
-  render (){
+  render() {
     return (
       <div>
         <header className="movie-card-header">
