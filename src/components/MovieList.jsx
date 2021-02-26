@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
-    const { movies } = this.propsprops;
+    const { movies } = this.props;
     return (
-      <div>{movies}</div>
+      <div>
+        {movies}
+      </div>
     );
   }
 }
