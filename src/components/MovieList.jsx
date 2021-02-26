@@ -1,15 +1,15 @@
 // implement MovieList component here
 import React from 'react';
-import movies from '../data';
+// import movies from '../data';
 
 class MovieList extends React.Component {
-    render() {
-        return (
-            <div>
+  render() {
+    return (
+      <div>
 
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
 export default MovieList;
