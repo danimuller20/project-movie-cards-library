@@ -1,12 +1,10 @@
 import React from 'react';
 
 class MovieCard extends React.Component {
-  render () {
+  render() {
     return (
-      <div>
-
-      </div>
-    )
+      <div></div>
+    );
   }
 }
 
