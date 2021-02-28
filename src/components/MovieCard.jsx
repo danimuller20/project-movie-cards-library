@@ -1,5 +1,5 @@
-import React from 'react';
-import React from './MovieList';
+// import React from 'react';
+import MoveList from './MovieList';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
