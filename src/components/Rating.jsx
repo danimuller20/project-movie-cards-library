@@ -12,9 +12,11 @@ class Rating extends React.Component {
 }
 
 Rating.propTypes = {
-  rating: PropTypes.shape({
-    rating: PropTypes.string,
-  }),
+  rating: PropTypes.string,
+};
+
+Rating.defaultProps = {
+  rating: 3,
 };
 
 export default Rating;
