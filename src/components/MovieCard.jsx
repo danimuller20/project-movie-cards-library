@@ -1,5 +1,4 @@
-// import React from 'react';
-import MoveList from './MovieList';
+import React from 'react';
 import Rating from './Rating';
 
 class MovieCard extends React.Component {
@@ -9,7 +8,7 @@ class MovieCard extends React.Component {
       <div className='movie-card'>
         <img src={ imagePath } alt={ title }/>
         <div>
-          <h4 className='title'>filme:{ title }</h4>
+          <h4 className='title'>{ title }</h4>
           <h5 className='subtitle'>{ subtitle }</h5>
           <p className='storyline'>{ storyline }</p>
         </div>
