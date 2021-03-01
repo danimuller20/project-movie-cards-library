@@ -1,18 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Rating from './Rating';
-import { prototype } from 'enzyme-adapter-react-16';
+import React from "react";
+import PropTypes from "prop-types";
+import Rating from "./Rating";
 
 class MovieCard extends React.Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, imagePath, rating } = movie;
     return (
-      <div className='movie-card'>
+      <div className="movie-card">
         <img src={ imagePath } alt={ title }/>
         <div>
-          <h4 className='title'>{ title }</h4>
-          <h5 className='subtitle'>{ subtitle }</h5>
-          <p className='storyline'>{ storyline }</p>
+          <h4 className="title">{ title }</h4>
+          <h5 className="subtitle">{ subtitle }</h5>
+          <p className="storyline">{ storyline }</p>
         </div>
         <Rating rating={ rating } />
       </div>
@@ -27,8 +27,8 @@ MovieCard.PropTypes = {
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
     rating: PropTypes.number,
-    imagePath: prototype.string,
+    imagePath: PropTypes.string,
   }).isRequired,
-}
+};
 
 export default MovieCard;
