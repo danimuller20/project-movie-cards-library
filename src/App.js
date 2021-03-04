@@ -4,8 +4,6 @@ import Header from './components/Header';
 import MovieList from './components/MovieList';
 import Data from './data';
 
-import './data';
-
 class App extends React.Component {
   render() {
     return (
