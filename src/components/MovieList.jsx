@@ -1,6 +1,6 @@
 // implement MovieList component here
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -14,8 +14,14 @@ class MovieList extends React.Component {
   }
 }
 
-// MovieList.propTypes = {
-//   movies: PropTypes.array,
-// }
+MovieList.propTypes = {
+  movies: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+}
 
 export default MovieList;
