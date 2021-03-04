@@ -22,6 +22,7 @@ MovieList.propTypes = {
     imagePath: PropTypes.string,
     rating: PropTypes.number,
   }).isRequired,
+  map: PropTypes.func,
 };
 
 export default MovieList;
