@@ -1,5 +1,5 @@
 // implement MovieCard component here
-/* import React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
@@ -28,6 +28,6 @@ MovieCard.propTypes = {
     rating: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     imagePath: PropTypes.string,
   }).isRequired,
-}; */
+};
 
-// export default MovieCard;
+export default MovieCard;
