@@ -1,20 +1,13 @@
 import React from 'react';
-import MovieCard from './MovieCard';
-import styles from '../App.css';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
-MovieList.propTypes = {
-	movies: PropTypes.arrayOf().isRequired
+export default function MovieList({ movies }) {
+  return (
+    <section className="movie-list">
+      { movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />) }
+    </section>
+  );
 }
 
-export default function MovieList(props) {
-  render () {
-		return (
-			<section className={ styles.movie-list }>
-				{
-					props.movies.map((movie) => <MovieCard key={ movie.title } movie={ movie } />)
-				}
-			</section>
-		);
-	}
-}
+MovieList.propTypes = { movies: PropTypes.arrayOf().isRequired };
