@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Rating from './Rating';
 
-export default function MovieCard({ title, subtitle, storyline, imagePath, rating }) {
+export default function MovieCard(props) {
+  const { movie } = props;
+  const { title, subtitle, storyline, imagePath, rating } = movie;
   return (
     <div className="movie-card">
       <img className="movie-card-image" src={ imagePath } alt={ title } />
@@ -17,9 +19,10 @@ export default function MovieCard({ title, subtitle, storyline, imagePath, ratin
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-};
+  movie: {
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    imagePath: PropTypes.string,
+    rating: PropTypes.number,
+  }.isRequired };
