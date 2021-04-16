@@ -1,5 +1,6 @@
 // implement MovieList component here
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class MovieListRend extends React.Component {
   render() {
@@ -11,5 +12,13 @@ class MovieListRend extends React.Component {
     );
   }
 }
+
+MovieListRend.propTypes = {
+  movies: PropTypes.arrayOf( 
+    PropTypes.shape({
+      title: PropTypes.string,
+    }).isRequired
+  ).isRequired
+};
 
 export default MovieListRend;
