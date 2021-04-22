@@ -14,7 +14,7 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.propType = {
+MovieList.propTypes = {
   movies: PropTypes.object,
 };
 

@@ -9,19 +9,20 @@ class MovieCard extends React.Component {
 
     return (
       <div className="movie-card">
-        <div className="movie-card-body" >
-            <img className="movie-card-image" src={ imagePath } alt={title} />
-            <h4 className="movie-card-title">{ title }</h4>
-            <h5 className="movie-card-subtitle">{ subtitle}</h5>
-            <p className="movie-card-storyline">{ storyline }</p>
+        <div className="movie-card-body">
+          <img className="movie-card-image" src={ imagePath } alt={ title }/>
+          <h4 className="movie-card-title">{ title }</h4>
+          <h5 className="movie-card-subtitle">{ subtitle}</h5>
+          <p className="movie-card-storyline">{ storyline }</p>
         </div>
         <Rating className="movie-card-rating" rating={ rating }/>
       </div>
-    )
-}
+    );
+  }
 }
 
-MovieCard.propType = {
+MovieCard.propTypes = {
+  movie: PropTypes.object.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   imagePath: PropTypes.string.isRequired,
