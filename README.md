@@ -8,5 +8,5 @@ Para clonar o projeto: `git clone git@github.com:danimuller20/project-movie-card
 
 Instalação das dependências: `npm install`
 
-Startar a aplicação: `npm start`
+Iniciar a aplicação: `npm start`
 
