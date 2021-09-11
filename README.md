@@ -1,4 +1,4 @@
-# Projeto Movie Cards Library!
+# Projeto Movie Cards Library! (Trybe)
 
 ### O projeto contém testes implementado pela trybe para o critério de valiação do mesmo.
 
